@@ -37,7 +37,7 @@ To run the project in development mode, set up two servers:
 ---
 
 ## **Before You Start**
-- Update `src/lib/pocketbase.ts` with your PocketBase connection URL.  
+- Update `src/lib/pocketbase.ts` with your PocketBase connection URL and the name of a collection (table) you wish to monitor.
 - Update `src/lib/singletonPocketBase.ts` to define the PocketBase collection to monitor in real time.
 
 ---
@@ -56,7 +56,7 @@ To run the project in development mode, set up two servers:
 
 From the stock SvelteKit setup, the following files have been updated or added:
 
-- **`src/lib/pocketbase.ts`**: Establishes the PocketBase connection.  
+- **`src/lib/pocketbase.ts`**: Establishes the PocketBase connection.
 - **`src/lib/singletonPocketBase.ts`**: Implements a shared PocketBase instance for efficient resource use and real-time database interaction.  
 - **`src/routes/+page.svelte`**: Demonstrates sample usage from the frontend.  
 - **`src/hooks.server.ts`**: Middleware handling WebSocket events for the long-running server.  
