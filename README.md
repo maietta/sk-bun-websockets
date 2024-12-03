@@ -62,6 +62,7 @@ From the stock SvelteKit setup, the following files have been updated or added:
 - **`src/hooks.server.ts`**: Middleware handling WebSocket events for the long-running server.  
 - **`vite.config.ts`**: Configures a proxy server endpoint for development.  
 - **`svelte.config.ts`**: Updates the adapter to use `svelte-adapter-bun`.
+- **`bunServer.ts`**: A helper websocket server for use during development.
 
 Additionally, the following packages were installed:
 
